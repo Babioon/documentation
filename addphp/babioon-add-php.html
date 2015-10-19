@@ -1,0 +1,24 @@
+<div class="introtext"><h2>This plugin allows you to include PHP in your content items.</h2>
+<p><strong>Keep in mind</strong>: allowing to include PHP-Code can be a security problem when you not do it in restricted way. Use for the scripts a directory nobody can upload files and if you have a bunch of authors restrict execution to some articles. </p>
+<p>This plugin allows to add PHP-Code to articles or modules. The PHP-script-files should be located under the Joomla! root-directory and you should disable the &quot;Print&quot; and &quot;Email to a friend&quot; links.</p>
+<p>Execution can be restricted to articles and/or modules. For articles you can also configure for which articles the script should be executed. Further more you can set the base directory and the relativ path to the file will then be calculated on this base.  </p>
+</div><hr id="system-readmore" /><div class="fulltext">
+<h3>Usage:</h3>
+<p>{babioonaddphp file=rel_path_to_the_file_with_filename}</p>
+<h3>Example:</h3>
+<p>Joomla installation directory: /var/www/joomla</p>
+<p>PHP-Files are in: /var/www/joomla/myphpfiles</p>
+<p>Filename: my_file.php</p>
+<p><strong>{babioonaddphp file=myphpfiles/my_file.php}</strong></p>
+<h3>Plugin Configuration</h3>
+<p><img src="http://babioon.com/images/extern/babioon-add-php-params-1.png" alt=""></p>
+<p>You have to create a folder within the Joomla-Root-Directory, all normal Joomla-Directories are excluded from the list. </p>
+<p><img src="http://babioon.com/images/extern/babioon-add-php-params-2.png" alt=""></p>
+<h4>Event for running</h4>
+<p><strong>Do not run</strong> disables executing for articles at all. Both events work in the same way the difference is that <strong>OnContentPrepare</strong> is executed a bit sooner then <strong>onContentBeforeDisplay</strong>.</p>
+<h4>Access Rule</h4>
+<p>If you chose <strong>deny</strong> then the listed articles are excluded from the execution of the script and for <strong>allow</strong> the execution only runs on these articles.</p>
+<h4>Article List</h4>
+<p>Comma separated list of article ids like 23,45,66 </p>
+<p><img src="http://babioon.com/images/extern/babioon-add-php-params-3.png" alt=""></p>
+</div>

@@ -1,0 +1,28 @@
+{
+  "name": "babioon-documentation",
+  "version": "1.0.0",
+  "description": "Documentation for babioon extensions",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-markdown": "^1.1.0",
+    "gulp-markdown-pdf": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp-insert": "^0.5.0",
+    "gulp-replace": "^0.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.rdbs.net:babioon/documentation.git"
+  },
+  "keywords": [
+    "babioon",
+    "documentation"
+  ],
+  "author": "Robert Deutz",
+  "license": "WTFPL"
+}
